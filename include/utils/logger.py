@@ -1,0 +1,34 @@
+"""
+Utilitário para logging padronizado.
+"""
+import logging
+from typing import Optional
+
+
+def get_logger(name: str, level: Optional[int] = None) -> logging.Logger:
+    """
+    Retorna um logger configurado.
+    
+    Args:
+        name: Nome do logger
+        level: Nível de log (default: INFO)
+    
+    Returns:
+        Logger configurado
+    """
+    logger = logging.getLogger(name)
+    
+    if level is None:
+        level = logging.INFO
+    
+    logger.setLevel(level)
+    
+    if not logger.handlers:
+        handler = logging.StreamHandler()
+        formatter = logging.Formatter(
+            '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+        )
+        handler.setFormatter(formatter)
+        logger.addHandler(handler)
+    
+    return logger
