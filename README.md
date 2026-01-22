@@ -74,14 +74,30 @@ Logs gerados localmente (adicionado ao .gitignore).
 
 ## 🚀 Como Usar
 
-1. Instale as dependências:
+### Setup Inicial
+
+1. **Configure o ambiente virtual** (recomendado):
 ```bash
+./scripts/setup_env.sh
+```
+
+Ou manualmente:
+```bash
+python3 -m venv venv
+source venv/bin/activate  # Linux/Mac
 pip install -r requirements.txt
 ```
 
-2. Configure as variáveis de ambiente (copie `.env.example` para `.env`)
+2. **Ative o ambiente virtual** (sempre antes de trabalhar):
+```bash
+source venv/bin/activate
+```
 
-3. Execute o Airflow localmente ou faça deploy para AWS MWAA
+3. **Configure as variáveis de ambiente** (copie `.env.example` para `.env`)
+
+4. **Execute o Airflow localmente** ou faça deploy para AWS MWAA
+
+📖 **Para mais detalhes, consulte o guia completo:** [SETUP.md](SETUP.md)
 
 ## 📤 Conectando ao GitHub
 
