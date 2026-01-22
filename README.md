@@ -92,7 +92,7 @@ Para conectar este repositório ao GitHub e fazer push das alterações, consult
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/SEU_USUARIO/etl_completo.git
+git remote add origin https://github.com/vitordatauser/etl_completo.git
 git branch -M main
 git push -u origin main
 ```
