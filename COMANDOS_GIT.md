@@ -26,7 +26,7 @@ git commit -m "Initial commit: estrutura base do projeto ETL com Airflow"
 
 ### 5. Conectar ao GitHub (substitua SEU_USUARIO)
 ```bash
-git remote add origin https://github.com/SEU_USUARIO/etl_completo.git
+git remote add origin https://github.com/vitordatauser/etl_completo.git
 ```
 
 ### 6. Renomear branch para main
